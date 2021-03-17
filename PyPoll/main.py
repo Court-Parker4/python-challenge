@@ -1,0 +1,23 @@
+#Print Election Results
+print(f'Election Results')
+print(f'____________________________')
+print(f'Total Votes: {months}')
+print(f'____________________________')
+print(f'Khan: {total:.2f}% ({votes})')
+print(f'Correy: {total:.2f}% ({votes})')
+print(f'Li:  {total:.2f}% ({votes})')
+print(f'OTooley: {total:.2f}% ({votes})')
+print(f'____________________________')
+print(f'Winner: {total}')
+
+with open('pypoll.txt', 'w') as text_file:
+    print(f'Election Results', file=text_file)
+    print(f'____________________________', file=text_file)
+    print(f'Total Votes: {months}', file=text_file)
+    print(f'____________________________', file=text_file)
+    print(f'Khan: {total:.2f}% ({votes})', file=text_file)
+    print(f'Correy: {total:.2f}% ({votes})', file=text_file)
+    print(f'Li:  {total:.2f}% ({votes})', file=text_file)
+    print(f'OTooley: {total:.2f}% ({votes})', file=text_file)
+    print(f'____________________________', file=text_file)
+    print(f'Winner: {total}', file=text_file)
